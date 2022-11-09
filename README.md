@@ -1,2 +1,2 @@
-# bio-practice
+# British Informatics Olympiad Practice
  
