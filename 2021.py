@@ -25,4 +25,5 @@ def main():
     print(swap_bool(is_pat(a + b)))
 
 
-main()
+if __name__ == "__main__":
+    main()
