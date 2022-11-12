@@ -8,4 +8,4 @@ def find_last(row) -> str:
     for _ in range(len(row) - 1): row = [find_missing(c, row[i + 1]) for i, c in enumerate(row[:-1])]
     return row[0]
 
-print(find_square(input()))
+print(find_last(input()))
