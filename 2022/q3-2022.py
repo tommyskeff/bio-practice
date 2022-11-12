@@ -1,8 +1,11 @@
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-def product(lst: list, f = 1) -> int:
-    for n in lst: f *= n
+
+def product(lst: list, f=1) -> int:
+    for n in lst:
+        f *= n
     return f
+
 
 def find_preference(arrangement: str, index: int) -> str:
     index -= 1
@@ -11,9 +14,8 @@ def find_preference(arrangement: str, index: int) -> str:
     layout = [None] * length
 
     for i in range(length):
-        letter = ALPHABET[i].lower()
+        letter, permutations = ALPHABET[i].lower(), []
         position = arrangement.index(letter)
-        permutations = []
 
         for j in range(position):
             if layout[j] == None:
